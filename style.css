@@ -1,3 +1,80 @@
-.box1 {
-  background-color: pink;
+body {
+  background-image: url(https://image.musinsa.com/mfile_s01/2019/04/08/71d8744118807d5b86a3d7c2a283ce1e182320.jpg);
+
+  /* background-size: auto; */
+  width: 600px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f1f1f1;
+}
+
+.container {
+  font-size: 43px;
+  width: 450px;
+  height: 100px;
+  margin-left: 350px;
+  margin-top: 50px;
+  font-weight: 500;
+  color: skyblue;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#result-area {
+  font-size: 25px;
+  width: 580px;
+  height: 45px;
+  margin-left: 400px;
+  margin-top: 00px;
+  background-color: white;
+}
+
+#chance-area {
+  font-size: 25px;
+  width: 290px;
+  height: 45px;
+  margin-left: 400px;
+  margin-top: 20px;
+  background-color: white;
+}
+#user-input {
+  font-size: 25px;
+  width: 150px;
+  height: 45px;
+  margin-left: 400px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+#play-button {
+  font-size: 25px;
+  color: white;
+  border-color: white;
+  width: 70px;
+  height: 47px;
+  margin-left: 20px;
+  margin-top: 10px;
+  background-color: rgb(134, 187, 250);
+  position: absolute;
+}
+
+#reset-button {
+  font-size: 25px;
+  color: white;
+  border-color: white;
+  width: 190px;
+  height: 45px;
+  margin-left: 110px;
+  margin-top: 10px;
+  background-color: rgb(134, 187, 250);
+  position: absolute;
+}
+
+#user-input {
+  width: 150px;
+  height: 45px;
 }
