@@ -28,8 +28,9 @@ userInput.addEventListener("focus", function () {
 function pickRandomNum() {
   computerNum = Math.floor(Math.random() * 100) + 1;
   console.log("정답", computerNum);
-  //resultArea.textContent = ("정답", computerNum);
-  document.write(computerNum);
+  alert(computerNum);
+
+  // document.write(computerNum);
 }
 
 function play() {
@@ -49,7 +50,7 @@ function play() {
 
   chances--;
   chanceArea.textContent = `남은기회 : ${chances}번`;
-  console.log("찬스", chances);
+  console.log("chance", chances);
 
   if (userValue < computerNum) {
     resultArea.textContent = "그 이상의 숫자입니다 UP!!";
