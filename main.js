@@ -1,4 +1,4 @@
-let computerNum = 0;
+let computerNum = document.getElementById("computer-Num");
 // computerNum 변수의 선언은 게임을 위한 컴퓨터의 랜덤번호를 담아주기 위한 변수공간이다 여기에 담기는 숫자와 유저가 적는 숫자를 비교하여 UP, down이 판가름된다
 let playButton = document.getElementById("play-button");
 // playButton의 변수에 html에서 버튼에 붙여준 id명을 불러들여서 playButton 변수를 이용해 버튼이 눌러질때 어떤 액션을 JS에서 처리하기 위해 해당 변수에 버튼 id요소를 담아주는것이다
@@ -28,6 +28,8 @@ userInput.addEventListener("focus", function () {
 function pickRandomNum() {
   computerNum = Math.floor(Math.random() * 100) + 1;
   console.log("정답", computerNum);
+  //resultArea.textContent = ("정답", computerNum);
+  document.write(computerNum);
 }
 
 function play() {
