@@ -28,13 +28,16 @@ userInput.addEventListener("focus", function () {
 function pickRandomNum() {
   computerNum = Math.floor(Math.random() * 100) + 1;
   console.log("정답", computerNum);
-  alert(computerNum);
-
+  // alert("정답",computerNum);
+  // alert(computerNum);
   // document.write(computerNum);
 }
 
 function play() {
   let userValue = userInput.value; //유저가 input란에 입력한 그 값을 가져온다
+
+  // chances--;
+  // console.log("찬스", chances);
 
   if (userValue < 1 || userValue > 100) {
     resultArea.textContent = "1과 100사이의 숫자를 입력해주세요";
@@ -48,9 +51,9 @@ function play() {
     return;
   }
 
-  chances--;
-  chanceArea.textContent = `남은기회 : ${chances}번`;
-  console.log("chance", chances);
+  // chances--;
+  // chanceArea.textContent = `남은기회 : ${chances}번`;
+  // console.log("chance", chances);
 
   if (userValue < computerNum) {
     resultArea.textContent = "그 이상의 숫자입니다 UP!!";
@@ -63,6 +66,10 @@ function play() {
 
   history.push(userValue);
 
+  chances--;
+  chanceArea.textContent = `남은기회 : ${chances}번`;
+  console.log("chance", chances);
+
   if (chances < 1) {
     gameOver = true;
   }
@@ -74,10 +81,14 @@ function play() {
 
 function reset() {
   userInput.value = "";
+  chanceArea.textContent = "";
 
   pickRandomNum();
+  alert(computerNum);
 
   resultArea.textContent = "결과 값이 여기 나옵니다! ";
+  // chanceArea.textContent = `남은기회 : ${chances}번`;
 }
 
 pickRandomNum();
+alert(computerNum);
