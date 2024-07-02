@@ -10,10 +10,11 @@ body {
 }
 
 .container {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 43px;
   width: 450px;
   height: 100px;
-  margin-left: 350px;
+  margin-left: 450px;
   margin-top: 50px;
   font-weight: 500;
   color: skyblue;
