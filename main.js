@@ -51,10 +51,6 @@ function play() {
     return;
   }
 
-  // chances--;
-  // chanceArea.textContent = `남은기회 : ${chances}번`;
-  // console.log("chance", chances);
-
   if (userValue < computerNum) {
     resultArea.textContent = "그 이상의 숫자입니다 UP!!";
   } else if (userValue > computerNum) {
@@ -80,14 +76,15 @@ function play() {
 }
 
 function reset() {
-  userInput.value = "";
-  chanceArea.textContent = "";
+  // userInput.value = "";
+  // chanceArea.textContent = "";
 
-  pickRandomNum();
-  alert(computerNum);
+  // history = [];
 
+  // pickRandomNum();
+  // alert(computerNum);
+  location.reload();
   resultArea.textContent = "결과 값이 여기 나옵니다! ";
-  // chanceArea.textContent = `남은기회 : ${chances}번`;
 }
 
 pickRandomNum();
